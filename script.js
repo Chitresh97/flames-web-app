@@ -62,6 +62,7 @@ function findFlames(){
     }
 
     let status=null;
+    let caption=null;
     switch (flames) {
         case 'F':
           status = "You are just Friends!";
@@ -79,8 +80,10 @@ function findFlames(){
           status = "Enemies for life!";
           break;
         case 'S':
-          status = "Yay! S*x";
+          status = "Yay! S*X";
+          caption = "*Don't forget to use protection.*";
           break;
       }
       document.getElementById("printStatus").innerHTML=status; 
+      document.getElementById("printCaption").innerHTML +=caption;
 }

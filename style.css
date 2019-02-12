@@ -4,3 +4,7 @@ h1{
 #printStatus{
     text-align: center;
 }
+#printCaption{
+    color: red;
+    text-align: center;
+}
