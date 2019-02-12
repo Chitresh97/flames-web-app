@@ -1,44 +1,32 @@
 console.log("Script running");
 
 function findCommonCharacters(firstName,secondName){
-    const firstNameLength=firstName.length;
-    const secondNameLength=secondName.length;
+    let firstNameLength=firstName.length;
+    let secondNameLength=secondName.length;
     let count=0;
-    if(firstNameLength>=secondNameLength){
-        for(let i=0; i<firstNameLength;i++){
-            for(let j=0; j<secondNameLength;j++){
-                if(firstName.charAt(i)==secondName.charAt(j)){
-                    console.log(firstName.charAt(i));
-                    count=count+2;
-                    secondName=secondName.substring(0,j)
-                    +secondName.substring(j+1,secondName.length);
-                    console.log(secondName);
-                    break;
-                    
-                }
-            }
-        }
-    }
-    else{
-        // let temp=firstName;
-        // firstName=secondName;
-        // secondName=temp;
-        for(let i=0; i<secondNameLength;i++){
-            for(let j=0; j<firstNameLength;j++){
-                if(secondName.charAt(i)==firstName.charAt(j)){
-                    // console.log(firstName.charAt(i));
-                    count=count+2;
-                    firstName=firstName.substring(0,j)
-                    +firstName.substring(j+1,firstName.length);
-                    console.log(firstName);
-                    break;
-                }
-            }
-        }
+    if(firstNameLength<secondNameLength){
+        let temp=firstName;
+        firstName=secondName;
+        secondName=temp;
+        firstNameLength=firstName.length;
+        secondNameLength=secondName.length;
 
     }
+
+    console.log(firstName,secondName);
+    for(let i=0; i<firstNameLength;i++){
+        for(let j=0; j<secondNameLength;j++){
+            if(firstName.charAt(i)==secondName.charAt(j)){
+                console.log(firstName.charAt(i));
+                count=count+2;
+                secondName=secondName.substring(0,j)
+                +secondName.substring(j+1,secondName.length);
+                console.log(secondName);
+                break;                
+            }
+        }
+    }  
     return count;
-
 }
 function findFlames(){
     
