@@ -8,21 +8,29 @@ function findCommonCharacters(firstName,secondName){
         for(let i=0; i<firstNameLength;i++){
             for(let j=0; j<secondNameLength;j++){
                 if(firstName.charAt(i)==secondName.charAt(j)){
+                    console.log(firstName.charAt(i));
                     count=count+2;
-                    secondName=secondName.substring(0,i)
-                    +secondName.substring(i+1,secondName.length);
+                    secondName=secondName.substring(0,j)
+                    +secondName.substring(j+1,secondName.length);
+                    console.log(secondName);
                     break;
+                    
                 }
             }
         }
     }
     else{
+        // let temp=firstName;
+        // firstName=secondName;
+        // secondName=temp;
         for(let i=0; i<secondNameLength;i++){
             for(let j=0; j<firstNameLength;j++){
                 if(secondName.charAt(i)==firstName.charAt(j)){
+                    // console.log(firstName.charAt(i));
                     count=count+2;
-                    firstName=firstName.substring(0,i)
-                    +firstName.substring(i+1,firstName.length);
+                    firstName=firstName.substring(0,j)
+                    +firstName.substring(j+1,firstName.length);
+                    console.log(firstName);
                     break;
                 }
             }
@@ -33,6 +41,7 @@ function findCommonCharacters(firstName,secondName){
 
 }
 function findFlames(){
+    
     const firstName=document.getElementById("firstname").value;
     const secondName=document.getElementById("secondname").value;
     const firstNameLength=firstName.length;
@@ -84,6 +93,10 @@ function findFlames(){
           caption = "*Don't forget to use protection.*";
           break;
       }
-      document.getElementById("printStatus").innerHTML=status; 
-      document.getElementById("printCaption").innerHTML +=caption;
+      document.getElementById("printStatus").innerHTML=status;
+      if(caption!=null){
+        document.getElementById("printCaption").innerHTML=caption;
+
+      } 
+      
 }
