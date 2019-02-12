@@ -29,9 +29,17 @@ function findCommonCharacters(firstName,secondName){
     return count;
 }
 function findFlames(){
-    
+    document.getElementById("printCaption").innerHTML = "";
     const firstName=document.getElementById("firstname").value;
     const secondName=document.getElementById("secondname").value;
+    
+    if(firstName==secondName){
+        if(firstName==""||secondName==""){
+            alert("Name fields can't be empty");
+        }
+        else
+            alert("First and second name can't be same!");
+    }
     const firstNameLength=firstName.length;
     const secondNameLength=secondName.length;
     let flames='FLAMES';
