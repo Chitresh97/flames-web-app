@@ -93,6 +93,7 @@ function findFlames(){
           caption = "*Don't forget to use protection.*";
           break;
       }
+      document.getElementById("prediction").className += "predictionStyling";
       document.getElementById("printStatus").innerHTML=status;
       if(caption!=null){
         document.getElementById("printCaption").innerHTML=caption;

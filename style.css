@@ -1,10 +1,19 @@
-h1{
+h1, #description{
     text-align: center;
 }
+
 #printStatus{
     text-align: center;
 }
 #printCaption{
-    color: red;
+    color: green;
     text-align: center;
+}
+/* .predictionStyling{
+    border: 1px solid orange;
+    border-radius: 10px;
+    background: antiquewhite;
+} */
+.redFont{
+    color: red
 }
