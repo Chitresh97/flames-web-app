@@ -65,7 +65,10 @@ function findFlames(){
         }
         flames=flames.substring(0,temp-1)
         +flames.substring(temp,flames.length);
-        temp=remainingCharacters-flames.length;   
+        if(temp>flames.length){
+            temp=remainingCharacters-flames.length;   
+        }
+        
         console.log(flames);
          
     }
