@@ -1,22 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-    <link rel="shortcut icon" type="image/png" href="/flame.png"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="shortcut icon" type="image/png" href="/flame.png" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    
+
     <title>FLAMES</title>
 </head>
+
 <body>
     <div class="jumbotron">
         <H1>FLAMES</H1>
-        <p id="description">FLAMES is a game named after the acronym: 
+        <p id="description">FLAMES is a game named after the acronym:
             <br>
-            Friends, Lovers, Affair, Marriage, Enemies, S*x.            
+            Friends, Lovers, Affair, Marriage, Enemies, Siblings.
         </p>
         <form>
             <div class="form-group">
@@ -24,21 +28,24 @@
             </div>
             <div class="form-group">
                 <input type="text" class="form-control" id="secondname" placeholder="Enter second name">
-            </div>      
-        </form>       
+            </div>
+        </form>
 
-       <button type="button" class="btn btn-warning btn-lg btn-block" id="flames" onclick="findFlames()"><i class="fas fa-fire"></i> Flames</button>
-       <br> 
-       <div id="prediction">
+        <button type="button" class="btn btn-warning btn-lg btn-block" id="flames" onclick="findFlames()"><i
+                class="fas fa-fire"></i> Flames</button>
+        <br>
+        <div id="prediction">
             <h3 id="printStatus"></h3>
             <p id="printCaption"></p>
-       </div> 
-       
-       <br>
-       <p class="redFont"><b>Disclaimer- </b>This game does not accurately predict whether or not an individual is right for you, 
-        but it can be fun to play this with your friends.</p>
+        </div>
 
-    </div>    
+        <br>
+        <p class="redFont"><b>Disclaimer- </b>This game does not accurately predict whether or not an individual is
+            right for you,
+            but it can be fun to play with your friends.</p>
+
+    </div>
     <script src="script.js"></script>
 </body>
+
 </html>
